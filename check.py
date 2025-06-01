@@ -1,5 +1,5 @@
 from proxmoxer import ProxmoxAPI
-
+import os
 from main_functions import (base_check, ipf_check, iptables_check,
                             gre_check, na_check, frr_check, dnsmasq_check, ssh_check,
                             iface_mode_check, nslookup)
