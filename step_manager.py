@@ -1,6 +1,7 @@
 import json, os
 from settings import SERVER, NODE
 
+os.makedirs("logs", exist_ok=True)
 LOG_FILE = f"logs/{SERVER}-{NODE}.json"
 
 # Загрузка выполненных этапов
