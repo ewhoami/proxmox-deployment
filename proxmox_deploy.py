@@ -32,6 +32,7 @@ run_step("create_net_HQ_SW", net_create, proxmox, 'HQ_SW', vlan=True)
 run_step("create_net_ISP_HQ", net_create, proxmox, 'ISP_HQ')
 run_step("create_net_ISP_BR", net_create, proxmox, 'ISP_BR')
 run_step("create_net_BR_SW", net_create, proxmox, 'BR_SW')
+proxmox.nodes(NODE).networtk.put()
 
 # Создание VM ISP
 run_step("create_vm_ISP", vm_create, proxmox, vmids['ISP'], 'ISP', 1, 1024,
