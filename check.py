@@ -12,6 +12,7 @@ else:
     proxmox = ProxmoxAPI(SERVER, user=USER, token_name=API_TOKEN_ID, token_value=API_TOKEN, verify_ssl=False, service='PVE')
 
 # Открытие файла
+os.makedirs("results", exist_ok=True)
 file = open(f'results/{SERVER}-{NODE}.txt', 'w')
 
 # Список vmid
