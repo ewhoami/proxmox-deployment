@@ -8,13 +8,8 @@
 
 1. Установка зависимостей
 
-pip install proxmoxer
-pip install requests
-
-       ИЛИ
-
-apt install python3-proxmoxer
-apt isntall python3-requests
+pip install proxmoxer / apt install python3-proxmoxer
+pip install requests / apt isntall python3-requests
 
 2. Настройки
 
