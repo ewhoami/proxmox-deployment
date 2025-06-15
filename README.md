@@ -9,6 +9,7 @@
 1. Установка зависимостей
 
 pip install proxmoxer / apt install python3-proxmoxer
+
 pip install requests / apt isntall python3-requests
 
 2. Преднастрйка стенда
