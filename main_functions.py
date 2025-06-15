@@ -152,7 +152,7 @@ def base_check(server, vmname, vmid, file):
 def ipf_check(server, vmid, file):
     file.write("\tip_forward:\n")
     ipf = send_command_output(server, vmid, ['sysctl', '-p'])
-    if ipf and 'ip_forward=1' in ipf:
+    if ipf and ('ip_forward=1' in ipf):
             file.write(f"\t\tspecified")
     else:
         file.write('\t\tnot specified\n')
